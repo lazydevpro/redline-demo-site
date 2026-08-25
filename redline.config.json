@@ -1,8 +1,19 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npm ci && npm run build",
   "outputDir": "dist",
   "serveCommand": null,
-  "routes": ["/", "/pricing", "/about"],
-  "breakpoints": [360, 1440],
-  "budgets": { "lcp": 2500, "cls": 0.1, "inp": 200 }
+  "routes": [
+    "/",
+    "/pricing",
+    "/about"
+  ],
+  "breakpoints": [
+    360,
+    1440
+  ],
+  "budgets": {
+    "lcp": 2500,
+    "cls": 0.1,
+    "inp": 200
+  }
 }
