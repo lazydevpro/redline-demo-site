@@ -1,0 +1,58 @@
+/*
+ * Local icon system, replacing the Font Awesome CDN kit
+ * (use.fontawesome.com/releases/v6.3.0/js/all.js). Each page inlines a
+ * small <svg><symbol> sprite once (right after <body>) with hand-authored
+ * glyphs for the handful of icons the theme uses; markup references them
+ * with <svg class="icon ..."><use href="#icon-name"></use></svg>.
+ *
+ * The layout classes below (fa-stack/fa-3x/fa-4x/fa-stack-1x/fa-stack-2x/
+ * fa-inverse) keep the exact class names the template markup already used
+ * so the surrounding HTML didn't need to change, and reproduce the same
+ * box model Font Awesome 6's own CSS uses for those classes (sizing via
+ * em-relative width/height plus position:absolute + margin:auto centering
+ * for the stack effect), just re-implemented here for our SVG icons
+ * instead of theirs.
+ */
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+    fill: currentColor;
+}
+
+.fa-3x {
+    font-size: 3em;
+}
+.fa-4x {
+    font-size: 4em;
+}
+
+.fa-stack {
+    display: inline-block;
+    position: relative;
+    height: 2em;
+    width: 2.5em;
+    vertical-align: middle;
+}
+.fa-stack-1x,
+.fa-stack-2x {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.fa-stack-1x {
+    height: 1em;
+    width: 1.25em;
+}
+.fa-stack-2x {
+    height: 2em;
+    width: 2.5em;
+}
+.fa-inverse {
+    color: #fff;
+}

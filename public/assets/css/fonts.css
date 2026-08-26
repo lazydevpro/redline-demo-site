@@ -1,0 +1,52 @@
+/*
+ * Self-hosted replacement for the Google Fonts CDN (fonts.googleapis.com /
+ * fonts.gstatic.com). Montserrat and Roboto Slab are both shipped by Google
+ * as variable fonts, so one woff2 file per family covers every weight the
+ * theme uses (400/700 for Montserrat, 100/300/400/700 for Roboto Slab) —
+ * browsers resolve each @font-face's declared weight against the file's
+ * own "wght" axis. Files live in /assets/fonts/, subsetted to latin only
+ * (the site's text content never leaves that range). font-display: swap
+ * avoids a blank-text flash while the local file loads.
+ */
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/assets/fonts/montserrat-variable.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/assets/fonts/montserrat-variable.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("/assets/fonts/roboto-slab-variable.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/assets/fonts/roboto-slab-variable.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/assets/fonts/roboto-slab-variable.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/assets/fonts/roboto-slab-variable.woff2") format("woff2");
+}

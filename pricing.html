@@ -15,11 +15,12 @@
         <title>Pricing - Agency</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" defer></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Icons: local hand-authored SVG sprite (inlined at the top of <body>),
+             replacing the Font Awesome CDN kit (use.fontawesome.com). -->
+        <link href="/assets/css/icons.css" rel="stylesheet" />
+        <!-- Fonts: self-hosted Montserrat / Roboto Slab, replacing the
+             fonts.googleapis.com / fonts.gstatic.com CDN requests. -->
+        <link href="/assets/css/fonts.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap), vendored verbatim from the template -->
         <link href="/assets/css/styles.css" rel="stylesheet" />
         <!-- The brand mark below is inlined as <svg> instead of <img> (same
@@ -35,6 +36,25 @@
         </style>
     </head>
     <body id="page-top">
+        <!-- Local icon sprite (hand-authored), replacing the Font Awesome CDN kit -->
+        <svg style="display: none" aria-hidden="true">
+            <symbol id="icon-bars" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="1" y="2.25" width="14" height="2" rx="1" />
+                <rect x="1" y="7" width="14" height="2" rx="1" />
+                <rect x="1" y="11.75" width="14" height="2" rx="1" />
+            </symbol>
+            <symbol id="icon-twitter" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M14.5 3.6c-.5.22-1.04.37-1.6.44a2.7 2.7 0 0 0 1.2-1.5 5.6 5.6 0 0 1-1.77.67 2.79 2.79 0 0 0-4.75 2.55A7.9 7.9 0 0 1 1.9 2.9a2.76 2.76 0 0 0 .87 3.7 2.8 2.8 0 0 1-1.27-.34v.03a2.79 2.79 0 0 0 2.24 2.73c-.4.1-.82.12-1.24.05a2.8 2.8 0 0 0 2.6 1.94A5.6 5.6 0 0 1 1 12.2a7.9 7.9 0 0 0 4.28 1.25c5.13 0 7.94-4.25 7.94-7.94 0-.12 0-.24-.01-.36a5.6 5.6 0 0 0 1.39-1.45z" />
+            </symbol>
+            <symbol id="icon-facebook-f" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M10.5 1.5H8.7A3.1 3.1 0 0 0 5.6 4.6v1.9H3.9v2.6h1.7V15h2.7V9.1h2.05l.35-2.6H8.3V4.9c0-.66.2-1.1 1.15-1.1h1.05z" />
+            </symbol>
+            <symbol id="icon-linkedin-in" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="1.1" y="5.4" width="2.5" height="9.1" rx="0.2" />
+                <circle cx="2.35" cy="2.3" r="1.55" />
+                <path d="M6.3 5.4h2.4v1.24h.03c.34-.63 1.16-1.3 2.4-1.3 2.57 0 3.04 1.67 3.04 3.85v4.91h-2.5V9.65c0-1.1 0-2.5-1.52-2.5-1.53 0-1.77 1.2-1.77 2.44v4.91h-2.5z" />
+            </symbol>
+        </svg>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -43,7 +63,7 @@
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
-                    <i class="fas fa-bars ms-1"></i>
+                    <svg class="icon ms-1"><use href="#icon-bars"></use></svg>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
@@ -144,9 +164,9 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; Agency 2026</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><svg class="icon"><use href="#icon-twitter"></use></svg></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook-f"></use></svg></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><svg class="icon"><use href="#icon-linkedin-in"></use></svg></a>
                     </div>
                     <div class="col-lg-4 text-lg-end">
                         <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
