@@ -77,7 +77,10 @@
             </div>
         </nav>
         <!-- About hero: PNG shipped without the <picture>/WebP upgrade (see /redline.config.json defects) -->
-        <img src="/assets/img/about-hero.png" class="w-100" alt="Our studio team at work" />
+        <picture>
+          <source srcset="/assets/img/about-hero.webp" type="image/webp">
+          <img src="/assets/img/about-hero.png" class="w-100" alt="Our studio team at work" />
+        </picture>
         <header class="page-section text-center pb-0">
             <div class="container">
                 <h1 class="section-heading text-uppercase">About Us</h1>
