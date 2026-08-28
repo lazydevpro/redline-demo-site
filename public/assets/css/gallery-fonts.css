@@ -1,0 +1,13 @@
+/* A display face for the gallery headings.
+ *
+ * No font-display, which means auto, which Chrome and Firefox treat as
+ * block: up to three seconds of invisible headings while it loads.
+ */
+@font-face {
+  font-family: 'Gallery Display';
+  src: url('/assets/fonts/montserrat-variable.woff2') format('woff2');
+  font-weight: 700;
+}
+.masthead-heading {
+  font-family: 'Gallery Display', 'Montserrat', sans-serif;
+}
