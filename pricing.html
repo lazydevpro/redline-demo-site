@@ -77,7 +77,10 @@
             </div>
         </nav>
         <!-- Pricing hero: real photo, deliberately lazy-loaded (see /redline.config.json defects) -->
-        <img src="/assets/img/header-bg.jpg" class="w-100" loading="lazy" alt="Our studio workspace" />
+        <picture style="display:contents">
+          <source srcset="/assets/img/header-bg.webp" type="image/webp">
+          <img src="/assets/img/header-bg.jpg" class="w-100" loading="lazy" alt="Our studio workspace" />
+        </picture>
         <header class="page-section text-center pb-0">
             <div class="container">
                 <h1 class="section-heading text-uppercase">Pricing</h1>
