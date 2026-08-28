@@ -23,6 +23,7 @@ export default defineConfig({
         main: resolve(import.meta.dirname, "index.html"),
         pricing: resolve(import.meta.dirname, "pricing.html"),
         about: resolve(import.meta.dirname, "about.html"),
+        gallery: resolve(import.meta.dirname, "gallery.html"),
       },
     },
   },
