@@ -7,6 +7,7 @@
   font-family: 'Gallery Display';
   src: url('/assets/fonts/montserrat-variable.woff2') format('woff2');
   font-weight: 700;
+  font-display: swap;
 }
 .masthead-heading {
   font-family: 'Gallery Display', 'Montserrat', sans-serif;
